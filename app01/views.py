@@ -18,3 +18,4 @@ def index(request):
     bb = strict_redis.get('bb')
     text = 'aa=%s, bb=%s' % (aa.decode(), bb.decode())
     return HttpResponse(text)
+
